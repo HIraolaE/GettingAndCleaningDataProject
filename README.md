@@ -7,7 +7,8 @@ Scripts
 -------
 There 3 R scripts in the repository.
 
-run_analysis.R: it is responsbile to perfor all the steps exaplained in the project. It calls to the functions defined on the other two scripts.
+run_analysis.R: it is responsbile to perfor all the steps exaplained in the project. It calls to the functions defined on the other two scripts. First it downloads and unzips the downloaded file. It loads data corresponding to the training and test sets and filters the features only to take the selected ones. Creates a data frame with the subject data, selected features and activity values, which has been change to show the activity names instead of a number. Once the tidy data frame is created, there is a function called to calculate the mean values and create the second data frame. Finally, both data frames are written into files.
+
 DownloadDataSet.R: Defines a function to download and unzip the dataset.
 GetMeansFunction.R: Takes the tidy data splited by subject and activity as described in the project description and computes the means creating a new data frame.
 

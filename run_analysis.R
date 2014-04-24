@@ -41,7 +41,7 @@ containsMeanOnly <- containsMean & !(containsMean & containsMeanFreq) ## true on
 containsStd <- grepl("std()",output[,2])
 
 ## Select the mean and std features
-xSel <- x[,containsMean | containsStd]
+xSel <- x[,containsMeanOnly | containsStd]
 
 ## substitute activity faactors(numbers in y) by labels
 ## Obtain the activity labels
